@@ -4,10 +4,204 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	
+
+	<style>
+	body{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		overflow-x: hidden;
+		background-color: rgb(107, 56, 24);
+	}
+	
+
+	.top{
+		background-color: black;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.top .imdb-logo{
+		min-width: 150px;
+		height: 50px;
+		margin-left: 2%;
+		margin-top: 1%;
+		padding-bottom: 1%;
+	}
+
+	.nav{
+		min-width: 500px;
+	}
+
+	.nav li{
+		position: relative;
+		top:-7px;
+		color: yellow;
+		font-weight: bold;
+		font-size: 18px;
+		float: left;
+		list-style: none;
+		padding-left: 5%;
+		padding: 5%;
+	}
+
+	.heading{
+		display: flex;
+		background-color: rgb(134, 20, 20);
+		color: white;
+		margin-top: 25%;
+	}
+
+	.heading > *{
+		flex: 1;
+	}
+
+	.ratings{
+		display: flex;
+		justify-content: flex-end;
+		font-weight: 600;
+		padding-top: 10px;
+	}
+
+	.ratings>*{
+		
+		flex-basis: 200px;
+	}
+
+	.movie-name{
+		margin-left: 2%;
+		font-size: 20px;
+	}
+
+	.movie-posters{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100vw;
+		justify-content: center;
+		background-color: rgb(79, 59, 59);
+	}
+
+	.moviePic{
+		width:100%;
+		height: 500px;
+		opacity: 0.5;
+	}
+
+
+
+	.poster1, .poster2{
+		width: 22%;
+	}
+
+	.video1{
+		width: 40%;
+	}
+
+	iframe{
+		width: 100%;
+	}
+
+	.pic1{
+		width: 100%;
+		height: 245px;
+	}
+	.pic2{
+		width: 100%;
+		height: 250px;
+	}
+
+	.movie-details{
+		width: 100vw;
+		color: rgb(255, 255, 255);
+		margin-left: 2%;
+	}
+
+	.movieDetail{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(140, 31, 31); 	
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.movie-details button{
+	font-size: 25px;
+}
+
+
+
+	</style>
+
+
+	
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	
+	<div class="top">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png" alt="imdb-logo" class="imdb-logo">
+		<div class="nav">
+			<ul>
+				<li>Home</li>
+				<li>WatchList</li>
+				<li>Sign In</li>
+				<li>Sign Out</li>
+			</ul>
+		</div>
+		
+
+	</div>
+	<div class="movie-details">
+
+		<p class="movieDetail">An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.</p>
+		<p>Directors <span>Chris Columbus</span></p>
+		<p>Writers <span>JK Rowling - Steve Kloves</span></p>
+		<p>Stars <span>Daniel Radcliffe - Rupert Grint - Richard Harris</span></p>
+		<button>Adventure</button>
+		<button>Family</button>
+		<button>Fantasy</button>
+	</div>
+	<div class="heading">
+		<div class="movie-name">
+			<h2>Harry Potter and the Sorcerer's Stone</h2>
+			<p>2001 - PG - 2h32m</p>
+		</div>
+		<div class="ratings">
+			<div>
+				<p>IMDB RATING</p>
+				<p>⭐7.6/10</p>
+			</div>
+			<div>
+				<p>POPULARITY</p>
+				<p>⛔101</p>
+			</div>
+			
+		</div>
+	</div>
+	<div class="movie-posters">
+		<div class="poster1">
+			<img class="moviePic" src="https://thescriptlab.com/wp-content/uploads/scripts/Harry-Potter-and-the-Sorcerers-Stone-poster.jpeg" alt="">
+		</div>
+		<div class="video1">
+			<iframe width="500" height="500" src="https://www.youtube.com/embed/Qgr4dcsY-60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+		<div class="poster2">
+			<div class="poster2-pic1">
+				<img class="pic1" src="https://c4.wallpaperflare.com/wallpaper/932/891/825/hogwarts-legacy-video-games-dragon-owl-harry-potter-hd-wallpaper-preview.jpg" alt="">
+			</div>
+			<div class="poster2-pic2">
+				<img class="pic2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQePk955rXy8-5pdCA998ICfC_R-cwXpxEiw&usqp=CAU" alt="">
+			</div>
+		</div>
+	</div>
+	
     <script type="text/javascript" src="./script.js">
 </script>
 
